@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume - Yogita V. Badiger</title>
+
+  <style>
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #13547a;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #13547a;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Navigation Bar (same as Biodata & Home) */
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 15px 40px;
+      background: #ffffff;
+      border-bottom: 2px solid #13547a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h2 {
+      margin: 0;
+      font-size: 1.7rem;   /* Matched Biodata */
+      color: #13547a;
+      font-weight: 800;    /* Matched Biodata */
+      letter-spacing: 1px;
+    }
+    nav a {
+      text-decoration: none;
+      background: #13547a;
+      color: #fff;
+      padding: 8px 18px;
+      margin: 0 6px;
+      border-radius: 25px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    nav a:hover {
+      background: #0d3a55;
+      transform: scale(1.05);
+    }
+    nav .active {
+      background: #0d3a55;
+    }
+
+    /* Layout */
+    .container {
+      margin-top: 120px;
+      display: flex;
+      width: 90%;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .sidebar {
+      width: 30%;
+      background: #13547a;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .main {
+      width: 70%;
+      padding: 40px;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+      width: 210px;
+      height: 260px;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+    }
+
+    /* Sidebar sections */
+    .sidebar h3 {
+      font-size: 1.2rem;
+      margin: 15px 0 10px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      text-align: left;
+    }
+    .sidebar p, .sidebar li, .sidebar a {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #f4f4f9;
+      text-align: left;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sidebar ul { margin: 10px 0 20px 15px; }
+
+    /* Title */
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #13547a;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      color: #13547a;
+      font-size: 1.2rem;
+      margin: 20px 0 10px;
+      border-bottom: 1px solid #13547a;
+      padding-bottom: 4px;
+    }
+    p, li { font-size: 1rem; line-height: 1.6; color: #222; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    .emph { font-weight: bold; color: #000; }
+    .muted { color: #555; font-size: 0.95rem; }
+
+    /* Declaration */
+    .declaration {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .sign-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+    .signature {
+      font-family: "Brush Script MT", cursive;
+      font-size: 1.5rem;
+      color: #13547a;
+      margin-bottom: 5px;
+    }
+
+    .foot {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+      .sidebar, .main { width: 100%; }
+      .sign-row { flex-direction: column; text-align: center; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <h2>My Portfolio</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="resume.html" class="active">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Resume Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Image -->
+      <br><br><img src="me.jpg" alt="Profile Photo" class="profile-pic">
+
+      <br><h3>Contact</h3>
+      <p>📧 <a href="mailto:badigeryogita8@gmail.com">badigeryogita8@gmail.com</a></p>
+      <p>📞 6361451604</p>
+      <p>🌐 <a href="https://www.linkedin.com/in/yogita-badiger-166a2122a/" target="_blank">linkedin.com/in/yogita-badiger</a></p>
+      <p>🔗 <a href="https://github.com/yogita" target="_blank">github.com/yogita</a></p>
+
+      <br><h3>Skills</h3>
+      <ul>
+        <li>Technical Skills: C, Java, Python, HTML, CSS, JavaScript, SQL, Git, AWS</li>
+        <li>Soft Skills: Communication, Problem-solving, Teamwork, Leadership</li>
+      </ul>
+
+      <!-- Added Personal Details Section -->
+      <br><h3>Personal Details</h3>
+      <ul>
+        <li><b>Date of Birth:</b> 16 August 2005</li>
+        <li><b>Father's Name:</b> Vijaykumar Badiger</li>
+        <li><b>Mother's Name:</b> Savita Badiger</li>
+        <li><b>Gender:</b> Female</li>
+        <li><b>Caste:</b> Hindu Panchal (Vishwakarma Brahman)</li>
+        <li><b>Address:</b> At Post Siddapur, Sub-District: Savanur, District: Haveri</li>
+        <li><b>Hobbies:</b> Reading Books, Writting Thoughts, Pencil Drawing, Singing, Playing Bat-Minton & Chess.</li>
+      </ul>
+
+      <br><h3>Languages</h3>
+      <ul>
+        <li>English</li>
+        <li>Kannada</li>
+        <li>Hindi</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="title"><center><h1>Yogita V. Badiger</h1></center></div>
+
+      <section>
+        <h2 class="section-title">Career Objective</h2>
+        <p>To use my programming skills, logical thinking, and creativity to build impactful software solutions. I am passionate about learning new technologies and aim to grow while contributing to the success of the organization.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Education</h2>
+        <ul>
+          <li>
+            <span class="emph">SKSVMACET College, Laxmeshwar, Karnataka</span>
+            <span class="muted"> — 2023 – 2027 (pursuing)</span><br>
+            <span class="muted">Bachelor of Engineering in Computer Science, CGPA: 8.32</span>
+          </li>
+          <li>
+            <span class="emph">Diploma in Computer Science & Engineering</span>
+            <span class="muted"> — 2021 – 2024</span><br>
+            Government Polytechnic for Women’s, Vidyanagar - Hubli 580021.
+            <ul>
+              <li>1st Year: 80.30% &amp; 77.00%</li>
+              <li>2nd Year: 81.30% &amp; 81.10%</li>
+              <li>3rd Year: 82.20% &amp; 83.40%</li>
+            </ul>
+          </li>
+          <li>
+            <span class="emph">SSLC (2021)</span><br>
+            Government Junior Technical School, Vidyanagar – Hubli 580021. &nbsp; <span class="muted"><br>
+            Percentage: 78.3%</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="section-title">Projects</h2>
+        <ul>
+          <li><span class="emph">Top 10 Museums List with Their Explanation:</span> HTML, CSS.</li>
+          <li><span class="emph">The Cat Cave (Online Cat Shopping):</span> HTML, CSS, JavaScript, SQL, PHP, XAMPP.</li>
+          <li><span class="emph">Online Course Registration:</span> HTML, CSS, JavaScript, SQL, PHP, XAMPP.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="section-title">Certifications</h2>
+      <ul>
+        <li>Introduction of Python for Beginners, SQL, HTML, Cloud Computing — Simplilearn</li>
+        <li>Introduction of Cloud Computing, Cloud Computing, Virtualization & Networking, Data Science — Infosys</li>
+        <li>UNXT Soft Skills Development Program — Unnati Foundation</li>
+        <li>Git Training — IIT Bombay</li>
+        <li>Mastering Git & GitHub — Microsoft Learn</li>
+        <li>Hackathon Participation — TCE Hackfinity</li>
+        <li>STACKCRAFT Best Project Award — CSE Dept & ISTE, at SKSVMACET - Laxmeshwar.</li>
+      </ul> 
+      </section> 
+
+      <section>
+        <h2 class="section-title">Declaration</h2>
+        <p class="declaration">I hereby declare that the information provided above is true to the best of my knowledge.</p>
+        <div class="sign-row">
+          <div><b>Place:</b> Siddapur<br><b>Date:</b> DD/MM/YYYY</div>
+          <div>
+            <div class="signature">Yogita V. Badiger</div>
+            <div><em>Signature</em></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="foot">© 2025 Yogita V. Badiger | All Rights Reserved</div>
+    </main>
+  </div>
+</body>
+</html>

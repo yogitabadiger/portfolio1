@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata - Yogita Badiger</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* General Page Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* Navigation Bar */
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 15px 40px;
+      background: #ffffff;
+      border-bottom: 2px solid #13547a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.7rem;
+      color: #13547a;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      text-decoration: none;
+      background: #13547a;
+      color: #fff;
+      padding: 8px 18px;
+      margin: 0 6px;
+      border-radius: 25px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background: #0d3a55;
+      transform: scale(1.05);
+    }
+
+    nav .active {
+      background: #0d3a55;
+    }
+
+    /* Container */
+    .container {
+      margin-top: 120px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      width: 90%;
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      position: relative;
+      border: 1px solid #e5eaf0;
+    }
+
+    /* Heading */
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #13547a;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #13547a;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Biodata Info */
+    .info p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #13547a;
+      font-weight: bold;
+    }
+
+    /* Card Styling */
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      border-left: 5px solid #13547a;
+    }
+
+    /* Image Styling */
+    .profile-pic {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 220px;   /* Increased size */
+      height: 280px;  /* Increased size */
+      border-radius: 12px;
+      object-fit: cover;
+      border: 3px solid #13547a;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Signature Section */
+    .signature-section {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .left-side {
+      text-align: left;
+    }
+
+    .right-side {
+      text-align: right;
+    }
+
+    .signature {
+      font-family: "Brush Script MT", cursive;
+      font-size: 1.8rem;
+      color: #13547a;
+      margin-bottom: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        margin: 5px;
+        font-size: 0.9rem;
+        padding: 6px 14px;
+      }
+      .container {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .info p {
+        font-size: 1rem;
+      }
+      .signature {
+        font-size: 1.5rem;
+      }
+      .profile-pic {
+        width: 150px;  /* Increased for small screens */
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <h2>My Portfolio</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biodata.html" class="active">Biodata</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Biodata Section -->
+  <div class="container"><center>
+    <h1>Bio-Data</h1></center>
+    <div class="card info">
+      <!-- Image at Right Top -->
+      <img src="mine.jpg" alt="Profile Picture" class="profile-pic">
+
+      <p><span class="highlight">Name:</span> Yogita V. Badiger</p>
+      <p><span class="highlight">Father’s Name:</span> Virupakshappa Badiger</p>
+      <p><span class="highlight">Mother’s Name:</span> Kamala Badiger</p>
+      <p><span class="highlight">Phone:</span> ******1604</p>
+      <p><span class="highlight">Email:</span> *********gita8@gmail.com</p>
+      <p><span class="highlight">Gender:</span> Female</p>
+      <p><span class="highlight">Date of Birth:</span> 16th August 2005</p>
+      <p><span class="highlight">Marital Status:</span> Single</p>
+      <p><span class="highlight">Category:</span> 2A, Hindu Panchala (Vishwakarma Brahman)</p>
+      <p><span class="highlight">God:</span> Vishwakarma</p>
+      <p><span class="highlight">Height:</span> 5.4 ft</p>
+      <p><span class="highlight">Hobbies:</span> Reading, Writing, Singing, Drawing, Playing Badminton, Writing Thoughts</p>
+      <p><span class="highlight">Nationality:</span> Indian</p>
+      <p><span class="highlight">Qualification:</span> Completed Diploma in Computer Science & Engineering. <br>Currently Pursuing BE in Computer Science & Engineering</p>
+      <p><span class="highlight">Job Experience:</span> Unemployed (Fresher)</p>
+      <p><span class="highlight">Sibling:</span> Sanjana Badiger (Younger Sister)</p>
+      <p><span class="highlight">Address:</span> Near Water Tank, At Post Siddaur, Savanur Taluk, Haveri District</p><br>
+      <p><span class="highlight"><u>Declaration:</u></span><br> I hereby declare that all the information provided here is true to the best of my knowledge.</p><br>
+
+      <!-- Signature Section -->
+      <div class="signature-section">
+        <div class="left-side">
+          <div><b>Place:</b> Siddapur</div>
+          <div><b>Date:</b> DD/MM/YYYY</div>
+        </div>
+        <div class="right-side">
+          <div class="signature">Yogita V. Badiger</div>
+          <div><em>Signature</em></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
